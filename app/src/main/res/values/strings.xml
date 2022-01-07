@@ -2,5 +2,7 @@
     <string name="app_name">SpyFall</string>
     <string name="edit_message">Enter a message</string>
     <string name="button_send">Send</string>
-    <string name="HowToPlay">instructions</string>
+    <string name="instructions">instructions</string>
+    <string name="HowToPlay">How to Play</string>
+    <string name="Play">Play</string>
 </resources>
