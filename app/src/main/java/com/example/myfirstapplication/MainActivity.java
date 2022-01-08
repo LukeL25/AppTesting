@@ -19,21 +19,31 @@ public class MainActivity extends AppCompatActivity {
         HTPButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                sendMessage(view);
+                toHowToPlay(view);
             }
 
-
     });
+        Button PlayButton = (Button)findViewById(R.id.PlayTheGame);
+        PlayButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                toGameInitialization(view);
+            }
+        });
+
+    }
+
+    //Called when the user taps the play button
+    public void toGameInitialization(View view) {
+        Intent intent = new Intent(this, InitializeGame.class);
+        startActivity(intent);
     }
 
 
-    /** Called when the user taps the Send button */
-    public void sendMessage(View view) {
+    //Called when the user taps the How to Play button
+    public void toHowToPlay(View view) {
         Intent intent = new Intent(this, DisplayMessageActivity.class);
-        String message = "Here";
-        intent.putExtra(EXTRA_MESSAGE, message);
         startActivity(intent);
-
     }
 
 
