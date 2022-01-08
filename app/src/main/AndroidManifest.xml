@@ -10,12 +10,17 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.MyFirstApplication">
         <activity
+            android:name=".InitializeGame"
+            android:exported="false"
+            android:label="@string/title_activity_initialize_game" />
+        <activity
             android:name=".DisplayMessageActivity"
             android:parentActivityName=".MainActivity">
-        <!-- The meta-data tag is required if you support API level 15 and lower -->
-        <meta-data
-            android:name="android.support.PARENT_ACTIVITY"
-            android:value=".MainActivity" />
+
+            <!-- The meta-data tag is required if you support API level 15 and lower -->
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainActivity" />
         </activity>
         <activity
             android:name=".MainActivity"
