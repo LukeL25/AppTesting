@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/PlayerNameCheck"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".InitializeGame">
+
+    <TextView
+        android:id="@+id/TimeLimDis"
+        android:layout_width="255dp"
+        android:layout_height="57dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="60dp"
+        android:text="Time Limit:"
+        android:textSize="28sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/PlayerNameDis" />
+
+    <TextView
+        android:id="@+id/PlayerNameDis"
+        android:layout_width="255dp"
+        android:layout_height="57dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="60dp"
+        android:text="Player Names:"
+        android:textSize="28sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/NumPlDis" />
+
+    <TextView
+        android:id="@+id/NumPlDis"
+        android:layout_width="255dp"
+        android:layout_height="57dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="72dp"
+        android:text="Number of Players:"
+        android:textSize="28sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/editTextNumber"
+        android:layout_width="88dp"
+        android:layout_height="71dp"
+        android:layout_marginEnd="28dp"
+        android:ems="10"
+        android:inputType="number"
+        android:textSize="24sp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/NumPlDis"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <CheckBox
+        android:id="@+id/checkBox"
+        android:layout_width="37dp"
+        android:layout_height="39dp"
+        android:layout_marginEnd="60dp"
+        android:scaleX="2"
+        android:scaleY="2"
+        app:layout_constraintBaseline_toBaselineOf="@+id/PlayerNameDis"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <SeekBar
+        android:id="@+id/seekBar4"
+        style="@style/Widget.AppCompat.SeekBar.Discrete"
+        android:layout_width="175dp"
+        android:layout_height="32dp"
+        android:layout_marginTop="56dp"
+        android:max="9"
+        android:progress="1"
+        app:layout_constraintTop_toBottomOf="@+id/TimeLimDis"
+        tools:layout_editor_absoluteX="59dp" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
