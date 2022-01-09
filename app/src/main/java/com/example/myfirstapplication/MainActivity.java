@@ -33,7 +33,7 @@ public class MainActivity extends AppCompatActivity {
 
     }
 
-    //Called when the user taps the play button
+    //Called when the user taps the Play button
     public void toGameInitialization(View view) {
         Intent intent = new Intent(this, InitializeGame.class);
         startActivity(intent);
